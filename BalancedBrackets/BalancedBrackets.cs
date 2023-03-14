@@ -37,7 +37,7 @@ namespace BalancedBracketsNS
                     brackets--;
                 }
             }
-            return brackets == 0;
+            return brackets == 0 && str.IndexOf("[") < str.IndexOf("]");
         }
     }
 }
